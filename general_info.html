@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Information</title>
+    <style>
+        body {
+            background-color:lightgray;
+        }
+        h1 {
+            text-align: center;
+        }
+        .myborder {
+            border: black solid 2px; 
+            text-align: center;
+        }
+        .myform {
+            margin: 0px 150px;
+        }
+        label {
+            line-height: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div class="myborder">
+        <h1>Environmental Scholar Projects Information System (ESPIS)</h1>
+        <p>
+            <!-- ENVIRONMENTAL SCHOLAR PROJECTS INFORMATION SYSTEM (ESPIS)<br> -->
+            GOVERMENT SECRETARIAT - OFFICE OF RISK MANAGEMENT<br>
+            MUNICIPAL EDUCATION SECRETARIAT<br>
+            ARMENIA HALL<br>
+        </p>
+    </div>
+    <h2>School General Information</h2>
+    <div>
+        <form class="myform" action="">
+            <fieldset>
+                <legend>Información General</legend>
+                
+                <label for="school_name">Institución Educativa:</label>
+                <input type="text" id="school_name" name="school_name" value="" placeholder="p.ej. María Auxiliadora" size="50" required><br>
+                <!-- <input type="text" id="fname" name="fname" value="John"><br> -->
+
+                <label for="school_commune">Comuna:</label>
+                <select id="school_commune" name="school_commune" required>
+                <!-- <select id="school_commune" name="school_commune" size="3" multiple></select> -->
+                    <option value="0" selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                
+                <label for="school_zone">Zona Educativa:</label>
+                <!-- <input type="text" id="school_zone" name="school_zone" value="" required><br> -->
+                <select id="school_zone" name="school_zone">
+                    <option value="0" selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select><br>
+                
+                <label for="school_nature">Naturaleza:</label>
+                <select id="school_nature" name="school_nature" required>
+                    <option value="none" selected></option>
+                    <option value="public">Oficial</option>
+                    <option value="private">Privado</option>
+                    <option value="other">Otro</option>
+                </select>
+    
+                <label for="school_character">Caracter:</label>
+                <select id="school_character" name="school_character" required>
+                    <option value="none" selected></option>
+                    <option value="mixed">Mixto</option>
+                    <option value="masculine">Masculino</option>
+                    <option value="Femenine">Femenino</option>
+                </select><br>
+    
+                <label for="school_address">Dirección:</label>
+                <input type="text" id="school_address" name="school_address" value="" placeholder="p.ej. Carrera 14 No. 10-23" size="50" required>
+                
+                <label for="school_tphone">Teléfono:</label>
+                <input type="tel" id="school_tphone" name="school_tphone" value="" placeholder="p.ej. 735 2134" pattern="[0-9]{3} [0-9]{4}" required><br>
+                
+                <label for="school_email">Correo Electrónico:</label>
+                <input type="email" id="school_email" name="school_email" value="" placeholder="p.ej. contacto@colegio.edu.co" size="30" required>
+                
+                <label for="school_fax">Fax:</label>
+                <input type="tel" id="school_fax" name="school_fax" value="" placeholder="p.ej. 3116879876" required>
+                
+            </fieldset>
+            <fieldset>
+                <label for="principal_name">Rector(a):</label>
+                <input type="text" id="principal_name" name="principal_name" value="" placeholder="p.ej. María Carmen Lopera Hernández" size="30" readonly><br>
+    
+                <label for="principal_tphone">Teléfono:</label>
+                <input type="tel" id="principal_tphone" name="principal_tphone" value="" placeholder="p.ej. 745 3434" required>
+    
+                <label for="principal_email">Correo Electrónico:</label>
+                <!-- <input type="text" id="principal_email" name="principal_email" value="" placeholder="p.ej. rectoria@colegio.edu.co" size="30" style="border: none; background-color: aquamarine;"> -->
+                <input type="text" id="principal_email" name="principal_email" value="" placeholder="p.ej. rectoria@colegio.edu.co" size="30" required><br>
+            </fieldset>
+            <input type="submit" value="Cargar">
+            <input type="reset" value="Borrar">
+            
+
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Registro y Login -->
+Crear formulario
+Crear PHP para procesar
+Crear base de datos y almacenar allí
+Consultar información
+Imprimir en PDF
+Imprimir en Excel
